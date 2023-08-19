@@ -53,6 +53,7 @@ var devices_recommended = {
     "FRITZ!Box 7360": "avm-fritz-box-7360",
     "FRITZ!Box 7362 SL": "avm-fritz-box-7362-sl",
     "FRITZ!Box 7412": "avm-fritz-box-7412",
+    "FRITZ!Box 7430": "avm-fritz-box-7430",
     "FRITZ!Box 7520": "avm-fritz-box-7520",
     "FRITZ!Box 7530": "avm-fritz-box-7530",
     "FRITZ!Repeater 1200": "avm-fritz-repeater-1200",
@@ -75,7 +76,7 @@ var devices_recommended = {
 
   "Cudy": {
     "WR1000": {"cudy-wr1000": "v2"},
-    "WR1300": "cudy-wr1300",
+    "WR1300": {"cudy-wr1300": "v1", "cudy-wr1300-v1": "v1", "cudy-wr1300-v2": "v2", "cudy-wr1300-v3": "v3"},
     "WR2100": "cudy-wr2100",
     "WR3000": "cudy-wr3000",
     "X6": "cudy-x6",
@@ -140,6 +141,7 @@ var devices_recommended = {
     "GL-B1300": "gl.inet-gl-b1300",
     "GL-MT300a": "gl-mt300a",
     "GL-MT300n": {"gl-mt300n": "v1", "gl-mt300n-v2": "v2"},
+    "GL-MT3000": "gl.inet-gl-mt3000",
     "GL-MT750": "gl-mt750",
     "GL-MT1300": "gl.inet-gl-mt1300",
     "GL-MT3000": "gl.inet-gl-mt3000",
@@ -168,6 +170,7 @@ var devices_recommended = {
   "Linksys": {
     "E4200": {"linksys-e4200-v2-viper": "v2"},
     "E8450": {"linksys-e8450": "", "linksys-e8450-ubi-sysupgrade.itb": ""},
+    "MR8300": {"linksys-mr8300-dallas": ""},
   },
 
   "Meraki": {
@@ -339,6 +342,7 @@ var devices_recommended = {
     "RE500": "tp-link-re500",
     "RE650": "tp-link-re650",
     "TD-W8970": "tp-link-td-w8970",
+    "TD-W9980": "tp-link-td-w9980",
     "TL-MR3020": {"tp-link-tl-mr3020-v3": "v3"},
     "TL-MR3420": "tp-link-tl-mr3420",
     "TL-MR6400": "tp-link-tl-mr6400",
@@ -376,7 +380,8 @@ var devices_recommended = {
                     "ubiquiti-nanostation-m5-xw": "M5 XW", "ubiquiti-nano-m5-xw": "M5 XW"},
     "Rocket": {"ubiquiti-rocket-m": "M", "ubiquiti-rocket-m-xw": "M XW",
                "ubiquiti-rocket-m2": "M2", "ubiquiti-rocket-m2-xw": "M2 XW",
-               "ubiquiti-rocket-m5": "M5", "ubiquiti-rocket-m5-xw": "M5 XW"},
+               "ubiquiti-rocket-m5": "M5", "ubiquiti-rocket-m5-xw": "M5 XW",
+               "ubiquiti-rocket-5ac-lite": "5 AC Lite"},
     "Rocket Titanium": {"ubiquiti-rocket-m-ti": "--ignore--",
                         "ubiquiti-rocket-m2-ti": "M2",
                         "ubiquiti-rocket-m5-ti": "M5"},
@@ -580,13 +585,17 @@ var devices_16_32 = {
   "VoCore": {
     "VoCore": {"vocore-16M": "16M"},
   },
-}
+};
 
 var devices_broken = {
   "AVM": {
     // no button for setup mode
     "FRITZ!Box 3370": {"avm-fritz-box-3370-rev-2-hynix-nand": "v2 Hynix", "avm-fritz-box-3370-rev-2-micron-nand": "v2 Micron"},
-    "FRITZ!Box 7430": "avm-fritz-box-7430",
+  },
+
+  "Cudy": {
+    // not in release
+    "M1800": "cudy-m1800",
   },
 
   "Raspberry Pi Foundation": {
@@ -607,12 +616,17 @@ var devices_broken = {
     "WRT1200AC": "linksys-wrt1200ac", // no 802.11s support
   },
 
+  "Netgear": {
+    // not in release
+    "WAX206": "netgear-wax206",
+  },
+
   "TP-Link": {
     "Archer C2600": {"tp-link-archer-c2600": "v1"}, // no 802.11s support
     "TD-W8980": "tp-link-td-w8980", // 5GHz unsupported
     "TD-W9980": "tp-link-td-w9980", // 5GHz unsupported
   },
-}
+};
 
 var vendormodels = {
   "recommended": devices_recommended,
@@ -623,7 +637,7 @@ var vendormodels = {
   "8_32": devices_8_32,
   "16_32": devices_16_32,
   "broken": devices_broken,
-}
+};
 
 var devices_info = {
   "Aruba": {
@@ -659,6 +673,12 @@ var devices_info = {
     "FRITZ!Repeater 1200": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=7f187229a8e9b7966248b1e024217e07a9fc3e50",
     "FRITZ!WLAN Repeater 300E": "https://fritz-tools.readthedocs.io/",
     "FRITZ!WLAN Repeater 450E": "https://fritz-tools.readthedocs.io/"
+  },
+  "Cudy": {
+    "WR1300": "http://www.cudytech.com/openwrt_software_download",
+    "WR2100": "https://openwrt.org/toh/cudy/cudy_wr2100_v1#installation_using_web_interface",
+    "M1800": "http://www.cudytech.com/openwrt_software_download",
+    "X6": "http://www.cudytech.com/openwrt_software_download",
   },
   "D-Link": {
     "DAP-1620": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=e4c7703d2a62b8914e4723adae3f67c68a57532c",
@@ -753,5 +773,6 @@ var devices_info = {
     "NWA50AX": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=a0b7fef0ffe4cd9cca39a652a37e4f3ce8f0a681",
     "NWA50AX Pro": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=f0445746f6fd96fc7c5394b238153bd2ff22bc5b",
     "NWA55AXE": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=a0b7fef0ffe4cd9cca39a652a37e4f3ce8f0a681",
+    "WSM20": "https://openwrt.org/toh/zyxel/wsm20#via_web_interface",
   },
 }

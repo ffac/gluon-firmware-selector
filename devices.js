@@ -80,7 +80,7 @@ var devices_recommended = {
     "TR1200": "cudy-tr1200",
     "TR3000": "cudy-tr3000",
     "WR1000": {"cudy-wr1000": "v2"},
-    "WR1300": "cudy-wr1300",
+    "WR1300": {"cudy-wr1300": "v1", "cudy-wr1300-v1": "v1", "cudy-wr1300-v2": "v2", "cudy-wr1300-v3": "v3"},
     "WR2100": "cudy-wr2100",
     "WR3000": "cudy-wr3000",
     "X6": "cudy-x6",
@@ -154,6 +154,7 @@ var devices_recommended = {
     "GL-E750": "gl.inet-gl-e750",
     "GL-MT300a": "gl-mt300a",
     "GL-MT300n": {"gl-mt300n": "v1", "gl-mt300n-v2": "v2"},
+    "GL-MT3000": "gl.inet-gl-mt3000",
     "GL-MT750": "gl-mt750",
     "GL-MT1300": "gl.inet-gl-mt1300",
     "GL-MT2500": "gl.inet-gl-mt2500",
@@ -183,6 +184,7 @@ var devices_recommended = {
 
   "Linksys": {
     "E8450": {"linksys-e8450": "", "linksys-e8450-ubi-sysupgrade.itb": ""},
+    "MR8300": {"linksys-mr8300-dallas": ""},
   },
 
   "Meraki": {
@@ -365,6 +367,7 @@ var devices_recommended = {
     "RE500": "tp-link-re500",
     "RE650": "tp-link-re650",
     "TD-W8970": "tp-link-td-w8970",
+    "TD-W9980": "tp-link-td-w9980",
     "TL-MR3020": {"tp-link-tl-mr3020-v3": "v3"},
     "TL-MR3420": "tp-link-tl-mr3420",
     "TL-MR6400": "tp-link-tl-mr6400",
@@ -402,7 +405,8 @@ var devices_recommended = {
                     "ubiquiti-nanostation-m5-xw": "M5 XW", "ubiquiti-nano-m5-xw": "M5 XW"},
     "Rocket": {"ubiquiti-rocket-m": "M", "ubiquiti-rocket-m-xw": "M XW",
                "ubiquiti-rocket-m2": "M2", "ubiquiti-rocket-m2-xw": "M2 XW",
-               "ubiquiti-rocket-m5": "M5", "ubiquiti-rocket-m5-xw": "M5 XW"},
+               "ubiquiti-rocket-m5": "M5", "ubiquiti-rocket-m5-xw": "M5 XW",
+               "ubiquiti-rocket-5ac-lite": "5 AC Lite"},
     "Rocket Titanium": {"ubiquiti-rocket-m-ti": "--ignore--",
                         "ubiquiti-rocket-m2-ti": "M2",
                         "ubiquiti-rocket-m5-ti": "M5"},
@@ -610,13 +614,17 @@ var devices_16_32 = {
   "VoCore": {
     "VoCore": {"vocore-16M": "16M"},
   },
-}
+};
 
 var devices_broken = {
   "AVM": {
     // no button for setup mode
     "FRITZ!Box 3370": {"avm-fritz-box-3370-rev-2-hynix-nand": "v2 Hynix", "avm-fritz-box-3370-rev-2-micron-nand": "v2 Micron"},
-    "FRITZ!Box 7430": "avm-fritz-box-7430",
+  },
+
+  "Cudy": {
+    // not in release
+    "M1800": "cudy-m1800",
   },
 
   "D-Link": {
@@ -643,12 +651,17 @@ var devices_broken = {
     "WRT1200AC": "linksys-wrt1200ac", // no 802.11s support
   },
 
+  "Netgear": {
+    // not in release
+    "WAX206": "netgear-wax206",
+  },
+
   "TP-Link": {
     "Archer C2600": {"tp-link-archer-c2600": "v1"}, // no 802.11s support
     "TD-W8980": "tp-link-td-w8980", // 5GHz unsupported
     "TD-W9980": "tp-link-td-w9980", // 5GHz unsupported
   },
-}
+};
 
 var vendormodels = {
   "recommended": devices_recommended,
@@ -659,7 +672,7 @@ var vendormodels = {
   "8_32": devices_8_32,
   "16_32": devices_16_32,
   "broken": devices_broken,
-}
+};
 
 var devices_info = {
   "Aruba": {
@@ -700,6 +713,10 @@ var devices_info = {
     "FRITZ!WLAN Repeater 450E": "https://fritz-tools.readthedocs.io/"
   },
   "Cudy": {
+    "WR1300": "http://www.cudytech.com/openwrt_software_download",
+    "WR2100": "https://openwrt.org/toh/cudy/cudy_wr2100_v1#installation_using_web_interface",
+    "M1800": "http://www.cudytech.com/openwrt_software_download",
+    "X6": "http://www.cudytech.com/openwrt_software_download",
     "TR3000": "https://forum.darmstadt.freifunk.net/t/installation-cudy-tr3000/1010",
   },
   "D-Link": {
@@ -804,5 +821,6 @@ var devices_info = {
     "NWA50AX": "https://forum.darmstadt.freifunk.net/t/installation-nwa50ax-nwa55axe/964",
     "NWA50AX Pro": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=f0445746f6fd96fc7c5394b238153bd2ff22bc5b",
     "NWA55AXE": "https://forum.darmstadt.freifunk.net/t/installation-nwa50ax-nwa55axe/964",
+    "WSM20": "https://openwrt.org/toh/zyxel/wsm20#via_web_interface",
   },
 }

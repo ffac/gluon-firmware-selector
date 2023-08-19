@@ -51,6 +51,7 @@ var devices_recommended = {
   },
 
   "AVM": {
+    "FRITZ!Box 3390": "avm-fritz-box-3390",
     "FRITZ!Box 4020": "avm-fritz-box-4020",
     "FRITZ!Box 4040": "avm-fritz-box-4040",
     "FRITZ!Box 7312": "avm-fritz-box-7312",
@@ -98,7 +99,7 @@ var devices_recommended = {
     "TR1200": "cudy-tr1200",
     "TR3000": "cudy-tr3000",
     "WR1000": {"cudy-wr1000": "v2"},
-    "WR1300": "cudy-wr1300",
+    "WR1300": {"cudy-wr1300": "v1", "cudy-wr1300-v1": "v1", "cudy-wr1300-v2": "v2", "cudy-wr1300-v3": "v3"},
     "WR2100": "cudy-wr2100",
     "WR3000": "cudy-wr3000",
     "WR3000E": "cudy-wr3000e",
@@ -133,6 +134,10 @@ var devices_recommended = {
     "WiFi Pro 1750e": "devolo-wifi-pro-1750e",
     "WiFi Pro 1750i": "devolo-wifi-pro-1750i",
     "WiFi Pro 1750x": "devolo-wifi-pro-1750x",
+  },
+
+  "Edimax": {
+    "BR 6478ac": "edimax-br-6478ac",
   },
 
   "EnGenius": {
@@ -206,6 +211,7 @@ var devices_recommended = {
   "Linksys": {
     "E4200": {"linksys-e4200-v2-viper": "v2"},
     "E8450": {"linksys-e8450": "", "linksys-e8450-ubi": ""},
+    "EA8300": {"linksys-ea8300-dallas": ""},
     "MR8300": "linksys-mr8300-dallas",
     "MX4200": {"linksys-mx4200v1": "v1"},
     "MX5300": "linksys-mx5300",
@@ -235,9 +241,16 @@ var devices_recommended = {
     "RBDiscG-5acD (DISC Lite5 ac)": "mikrotik-discg-5acd",
     "RBSXTsqG-5acD (SXTsq 5 ac)": "mikrotik-sxtsq-5-ac-rbsxtsqg-5acd",
     "RBwAPR-2nD (wAP R)": "mikrotik-routerboard-wapr-2nd",
+    "Routerboard 750gr3": "mikrotik-routerboard-750gr3",
+    "Routerboard Hex": "mikrotik-routerboard-hex",
+    "Routerboard mAP Lite": "mikrotik-routerboard-map-lite",
+    "Routerboard mAPL": "mikrotik-routerboard-mapl-2nd",
+    "Routerboard wAP-AC": "mikrotik-routerboard-wap-ac",
+    "Routerboard wAP-g-5hact2hnd": "mikrotik-routerboard-wap-g-5hact2hnd",
     "nand": {"mikrotik-nand-64m" : "64m", "mikrotik-nand-large" : "large", "mikrotik-nand-large-ac": "large AC"},
     "nor": {"mikrotik-rb-nor-flash-16M-sysupgrade": "16m", "mikrotik-rb-nor-flash-16M-ac": "16m AC"},
     "vmlinux": {"mikrotik-vmlinux-lzma" : "", "mikrotik-vmlinux.lzma" : ""},
+    "Wap-g-5hacd2hnd (wAP ac)": "mikrotik-wap-ac",
   },
 
   "Netgear": {
@@ -405,6 +418,7 @@ var devices_recommended = {
     "CPE510": {"tp-link-cpe510": "", "tp-link-cpe510-520": "", "tp-link-cpe520": "--ignore--"},
     "CPE710": "tp-link-cpe710",
     "EAP225-Outdoor": "tp-link-eap225-outdoor",
+    "EAP225-Wall": "tp-link-eap225-wall",
     "EAP615-Wall": "tp-link-eap615-wall",
     "Festa FR365": "tp-link-fr365",
     "RE200": "tp-link-re200",
@@ -454,6 +468,7 @@ var devices_recommended = {
     "Rocket": {"ubiquiti-rocket-m": "M", "ubiquiti-rocket-m-xw": "M XW",
                "ubiquiti-rocket-m2": "M2", "ubiquiti-rocket-m2-xw": "M2 XW",
                "ubiquiti-rocket-m5": "M5", "ubiquiti-rocket-m5-xw": "M5 XW",
+               "ubiquiti-rocket-5ac-lite": "5 AC Lite",
                "ubiquiti-rocket-m-xm": "M/M2/M5 XM"},
     "Rocket Titanium": {"ubiquiti-rocket-m-ti": "--ignore--",
                         "ubiquiti-rocket-m2-ti": "M2",
@@ -533,6 +548,7 @@ var devices_recommended = {
 
   "ZTE": {
     "MF281": "zte-mf281",
+    "MF286R": "zte-mf286r",
     "MF289F": "zte-mf289f",
   },
 };
@@ -668,9 +684,15 @@ var devices_16_32 = {
 };
 
 var devices_broken = {
+
   "AVM": {
     // no button for setup mode
     "FRITZ!Box 3370": {"avm-fritz-box-3370-rev-2-hynix-nand": "v2 Hynix", "avm-fritz-box-3370-rev-2-micron-nand": "v2 Micron"},
+  },
+
+  "Cudy": {
+    // not in release
+    "M1800": "cudy-m1800",
   },
 
   "D-Link": {
@@ -700,6 +722,11 @@ var devices_broken = {
     "E4200": {"linksys-e4200-v2-viper": "v2"}, // no 802.11s support
     "E4500": "linksys-ea4500-viper", // no 802.11s support
     "WRT1200AC": "linksys-wrt1200ac", // no 802.11s support
+  },
+
+  "Netgear": {
+    // not in release
+    "WAX218": "netgear-wax218",
   },
 
   "TP-Link": {
@@ -767,6 +794,7 @@ var devices_info = {
   "Cudy": {
     "AP1300 Outdoor": "https://forum.darmstadt.freifunk.net/t/installation-cudy-tr3000/1010",
     "AP3000 Outdoor": "https://forum.darmstadt.freifunk.net/t/installation-cudy-tr3000/1010",
+    "M1800": "http://www.cudytech.com/openwrt_software_download",
     "M3000": "https://forum.darmstadt.freifunk.net/t/installation-cudy-tr3000/1010",
     "RE3000": "https://forum.darmstadt.freifunk.net/t/installation-cudy-tr3000/1010",
     "TR1200": "https://forum.darmstadt.freifunk.net/t/installation-cudy-tr3000/1010",

@@ -4,6 +4,10 @@ var devices_recommended = {
     "Jalapeno Board": "8devices-jalapeno"
   },
 
+  "Acer": {
+    "Connect Vero W6m": {"acer-connect-vero-w6m": ""},
+  },
+
   "Aerohive": {
     "HiveAP 121": "aerohive-hiveap-121",
     "HiveAP 330": "aerohive-hiveap-330",
@@ -28,6 +32,7 @@ var devices_recommended = {
   "Aruba": {
     "AP-303": "aruba-ap-303",
     "AP-303H": "aruba-ap-303h",
+    "AP-325": "aruba-ap-325",
     "AP-365": "aruba-ap-365",
     "Instant On AP11": "aruba-instant-on-ap11",
     "Instant On AP11D": "aruba-instant-on-ap11d",
@@ -38,12 +43,13 @@ var devices_recommended = {
      "RT-AC51U": "asus-rt-ac51u",
      "RT-AC57U": "asus-rt-ac57u",
      "RT-AX52": "asus-rt-ax52",
-     "RT-AX53U": "asus-rt-ax53u",
+     "RT-AX53U (RT-AX1800U)": "asus-rt-ax53u",
      "TUF-AX4200": "asus-tuf-ax4200",
      "TUF-AX6000": "asus-tuf-ax6000",
   },
 
   "AVM": {
+    "FRITZ!Box 3390": "avm-fritz-box-3390",
     "FRITZ!Box 4020": "avm-fritz-box-4020",
     "FRITZ!Box 4040": "avm-fritz-box-4040",
     "FRITZ!Box 7312": "avm-fritz-box-7312",
@@ -58,6 +64,7 @@ var devices_recommended = {
     "FRITZ!Box 7520": "avm-fritz-box-7520",
     "FRITZ!Box 7530": "avm-fritz-box-7530",
     "FRITZ!Repeater 1200": "avm-fritz-repeater-1200",
+    "FRITZ!Repeater 3000": "avm-fritz-repeater-3000",
     "FRITZ!WLAN Repeater 300E": "avm-fritz-wlan-repeater-300e",
     "FRITZ!WLAN Repeater 450E": "avm-fritz-wlan-repeater-450e",
     "FRITZ!WLAN Repeater 1750E": "avm-fritz-wlan-repeater-1750e",
@@ -72,7 +79,7 @@ var devices_recommended = {
       "buffalo-wzr-hp-g300nh": "v1",
       "buffalo-wzr-hp-g300nh2": "v2"
     },
-    "WZR-HP-G450H": {"buffalo-wzr-hp-g450h": ""},
+    "WZR-HP-G450H": "buffalo-wzr-hp-g450h-wzr-450hp",
   },
 
   "Cudy": {
@@ -114,6 +121,10 @@ var devices_recommended = {
     "WiFi Pro 1750x": "devolo-wifi-pro-1750x",
   },
 
+  "Edimax": {
+    "BR 6478ac": "edimax-br-6478ac",
+  },
+
   "EnGenius": {
     "ENS620EXT": {"engenius-ens620ext": "", "engenius-ens620ext-factory_fw30": "fw3.0", "engenius-ens620ext-factory_fw35": "fw3.5"},
   },
@@ -128,6 +139,7 @@ var devices_recommended = {
     "WS-AP3805i": "extreme-networks-ws-ap3805i",
     "WS-AP3825i": "extreme-networks-ws-ap3825i",
     "WS-AP3915i": "extreme-networks-ws-ap3915i",
+    "WS-AP3935i": "extreme-networks-ap3935",
   },
 
   "FriendlyElec": {
@@ -154,7 +166,6 @@ var devices_recommended = {
     "GL-E750": "gl.inet-gl-e750",
     "GL-MT300a": "gl-mt300a",
     "GL-MT300n": {"gl-mt300n": "v1", "gl-mt300n-v2": "v2"},
-    "GL-MT3000": "gl.inet-gl-mt3000",
     "GL-MT750": "gl-mt750",
     "GL-MT1300": "gl.inet-gl-mt1300",
     "GL-MT2500": "gl.inet-gl-mt2500",
@@ -175,7 +186,7 @@ var devices_recommended = {
   },
 
   "LeMaker": {
-    "Banana Pi": "lemaker-banana-pi",
+    "Banana Pi": "lemaker-banana-pi"
   },
 
   "Librerouter": {
@@ -183,8 +194,10 @@ var devices_recommended = {
   },
 
   "Linksys": {
-    "E8450": {"linksys-e8450": "", "linksys-e8450-ubi-sysupgrade.itb": ""},
+    "E8450": "linksys-e8450",
+    "EA8300": {"linksys-ea8300-dallas": ""},
     "MR8300": {"linksys-mr8300-dallas": ""},
+    "WHW03": {"linksys-whw03-velop": "v1", "linksys-whw03-v2-velop": "v2"},
   },
 
   "Meraki": {
@@ -205,9 +218,16 @@ var devices_recommended = {
     "RBDiscG-5acD (DISC Lite5 ac)": "mikrotik-discg-5acd",
     "RBSXTsqG-5acD (SXTsq 5 ac)": "mikrotik-sxtsq-5-ac-rbsxtsqg-5acd",
     "RBwAPR-2nD (wAP R)": "mikrotik-routerboard-wapr-2nd",
+    "Routerboard 750gr3": "mikrotik-routerboard-750gr3",
+    "Routerboard Hex": "mikrotik-routerboard-hex",
+    "Routerboard mAP Lite": "mikrotik-routerboard-map-lite",
+    "Routerboard mAPL": "mikrotik-routerboard-mapl-2nd",
+    "Routerboard wAP-AC": "mikrotik-routerboard-wap-ac",
+    "Routerboard wAP-g-5hact2hnd": "mikrotik-routerboard-wap-g-5hact2hnd",
     "nand": {"mikrotik-nand-64m" : "64m", "mikrotik-nand-large" : "large", "mikrotik-nand-large-ac": "large AC"},
     "nor": {"mikrotik-rb-nor-flash-16M-sysupgrade": "16m", "mikrotik-rb-nor-flash-16M-ac": "16m AC"},
     "vmlinux": {"mikrotik-vmlinux-lzma" : "", "mikrotik-vmlinux.lzma" : ""},
+    "Wap-g-5hacd2hnd (wAP ac)": "mikrotik-wap-ac",
   },
 
   "Netgear": {
@@ -354,20 +374,21 @@ var devices_recommended = {
     "Archer C5": "tp-link-archer-c5",
     "Archer C50": {"tp-link-archer-c50": "v1", "tp-link-archer-c50-v3": "v3", "tp-link-archer-c50-v4": "v4"},
     "Archer C59": "tp-link-archer-c59",
-    "Archer C6": {"tp-link-archer-c6-v2-eu-ru-jp": "v2 (EU/RU/JP)", "tp-link-archer-c6-v2": "v2 (EU/RU/JP)", "tp-link-archer-c6-v3": "v3"},
+    "Archer C6": {"tp-link-archer-c6-v2-eu-ru-jp": "v2", "tp-link-archer-c6-v2": "v2", "tp-link-archer-c6-v3": "v3"},
     "Archer C7": "tp-link-archer-c7",
+    "Archer AX23": "tp-link-archer-ax23",
     "CPE210": {"tp-link-cpe210": "", "tp-link-cpe210-220": ""},
     "CPE220": {"tp-link-cpe220": "", "tp-link-cpe220-v1.1": "--ignore--"},
     "CPE510": {"tp-link-cpe510": "", "tp-link-cpe510-520": "", "tp-link-cpe520": "--ignore--"},
     "CPE710": "tp-link-cpe710",
     "EAP225-Outdoor": "tp-link-eap225-outdoor",
+    "EAP225-Wall": "tp-link-eap225-wall",
     "EAP615-Wall": "tp-link-eap615-wall",
     "RE200": "tp-link-re200",
     "RE305": "tp-link-re305",
     "RE500": "tp-link-re500",
     "RE650": "tp-link-re650",
     "TD-W8970": "tp-link-td-w8970",
-    "TD-W9980": "tp-link-td-w9980",
     "TL-MR3020": {"tp-link-tl-mr3020-v3": "v3"},
     "TL-MR3420": "tp-link-tl-mr3420",
     "TL-MR6400": "tp-link-tl-mr6400",
@@ -445,11 +466,12 @@ var devices_recommended = {
   "Xiaomi": {
     "AX3000T": "xiaomi-mi-router-ax3000t",
     "AX3200 (RB03)": "xiaomi-redmi-router-ax6s",
+    "AX3600": "xiaomi-ax3600",
     "Mi RA75": "xiaomi-mi-ra75",
     "Mi Router 3G": "xiaomi-mi-router-3g",
     "Mi Router 4A (100M Edition)": "xiaomi-mi-router-4a-100m-edition",
     "Mi Router 4A (100M International Edition)": "xiaomi-mi-router-4a-100m-international-edition",
-    "Mi Router 4A (Gigabit Edition)": { "xiaomi-mi-router-4a-gigabit-edition": "v1", "xiaomi-mi-router-4a-gigabit-edition-v2": "v2" },
+    "Mi Router 4A (Gigabit Edition)": "xiaomi-mi-router-4a-gigabit-edition",
     "Mi Router 4C": "xiaomi-mi-router-4c",
     "MiWiFi Mini": "xiaomi-miwifi-mini"
   },
@@ -473,7 +495,7 @@ var devices_recommended = {
     "NWA50AX": "zyxel-nwa50ax",
     "NWA50AX Pro": "zyxel-nwa50ax-pro",
     "NWA55AXE": "zyxel-nwa55axe",
-    "WSM20": "zyxel-wsm20",
+    "WSM20 (Multy M1)": "zyxel-wsm20",
   },
 
   "ZBT": {
@@ -482,6 +504,7 @@ var devices_recommended = {
 
   "ZTE": {
     "MF281": "zte-mf281",
+    "MF286R": "zte-mf286r",
     "MF289F": "zte-mf289f",
   },
 };
@@ -617,6 +640,7 @@ var devices_16_32 = {
 };
 
 var devices_broken = {
+
   "AVM": {
     // no button for setup mode
     "FRITZ!Box 3370": {"avm-fritz-box-3370-rev-2-hynix-nand": "v2 Hynix", "avm-fritz-box-3370-rev-2-micron-nand": "v2 Micron"},
@@ -629,6 +653,11 @@ var devices_broken = {
 
   "D-Link": {
     "DGS-1210-10P": "d-link_dgs-1210-10p", // removed
+  },
+
+  "Google": {
+    // open device
+    "Wifi Gale": "google-wifi-gale",
   },
 
   "Raspberry Pi Foundation": {
@@ -653,7 +682,7 @@ var devices_broken = {
 
   "Netgear": {
     // not in release
-    "WAX206": "netgear-wax206",
+    "WAX218": "netgear-wax218",
   },
 
   "TP-Link": {
@@ -690,6 +719,7 @@ var devices_info = {
   "Asus": {
     "RT-AC51U": "https://openwrt.org/toh/asus/rt-ac51u#installation",
     "RT-AX52": "https://openwrt.org/toh/asus/rt-ax52#installation",
+    "RT-AX53U (RT-AX1800U)": "https://openwrt.org/toh/asus/rt-ax53u#installation_with_mtd-write",
     "TUF-AX4200": "https://github.com/freifunk-darmstadt/projects/wiki/90-%E2%80%90-Hardware-%E2%80%90-ASUS-TUF-AX4200",
     "TUF-AX6000": "https://github.com/herbetom/openwrt-asus-filogic-factory/releases/latest",
   },
@@ -719,7 +749,17 @@ var devices_info = {
     "X6": "http://www.cudytech.com/openwrt_software_download",
     "TR3000": "https://forum.darmstadt.freifunk.net/t/installation-cudy-tr3000/1010",
   },
+  "Enterasys": {
+    "WS-AP3705i": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=ebddc5f984a240980303aed68524eb615484eef8",
+    "WS-AP3710i": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=16b01fb1b9c99513c318109bef96a1a3545c57a0",
+    "WS-AP3715i": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=765f66810a3324cc35fa6471ee8eeee335ba8c2b",
+  },
+  "Extreme Networks": {
+    "WS-AP3805i": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=f8c87aa2d27ab405f284dd4357377ab5c893a345",
+    "WS-AP3825i": "https://forum.darmstadt.freifunk.net/t/flashing-of-the-extreme-networks-ws-ap3825i/923",
+  },
   "D-Link": {
+    "COVR-X1860": "https://freifunk-aachen.de/2023/08/03/installationsanleitung-d-link-covr-x1860/",
     "DAP-1620": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=e4c7703d2a62b8914e4723adae3f67c68a57532c",
     "DAP-2680": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=5b58710fad2137eedad874f0fe8fe22082d1edc6",
     "DAP-X1860": "https://forum.darmstadt.freifunk.net/t/installation-d-link-dap-x1860/987",
@@ -764,6 +804,8 @@ var devices_info = {
     },
     "R6120": "https://freifunk-ingolstadt.de/eigener-freifunk-hotspot/anleitung/installationsanleitung-fuer-netgear-r6120/",
     "R6220": "https://freifunk-ingolstadt.de/installationsanleitung-fuer-netgear-r6220/",
+    "WAX202": "https://openwrt.org/toh/netgear/wax202#oem_easy_installation",
+    "WAX206": "https://openwrt.org/toh/netgear/wax206#oem_easy_installation",
     "WAX220": "https://openwrt.org/toh/netgear/wax220#oem_easy_installation",
   },
   "RAVPower": {
@@ -784,7 +826,7 @@ var devices_info = {
     "EdgeRouter X-SFP": "https://github.com/oszilloskop/UBNT_ERX_Gluon_Factory-Image/blob/master/README.md#gluon-auf-ubnt-edgerouter-x-und-x-sfp",
     "Swiss Army Knife Ultra": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=5ad05681f2de00c8c6d6449df2b958b0838dbc1a",
     "UniFi 6 Lite": "https://openwrt.org/toh/ubiquiti/unifi6lite#installation",
-    "UniFi 6 LR": "https://openwrt.org/toh/ubiquiti/unifi6lite#installation",
+    "UniFi 6 LR": "https://openwrt.org/toh/ubiquiti/unifi_6_lr#installation_steps",
     "UniFi 6+": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=75ee5546e9b7cfa5bbfd6f844ab8c5fffd5bb594",
     "UniFi AC Lite": "https://forum.darmstadt.freifunk.net/t/unifi-ap-erstinstallation/790",
     "UniFi AC LR": "https://forum.darmstadt.freifunk.net/t/unifi-ap-erstinstallation/790",
@@ -821,6 +863,6 @@ var devices_info = {
     "NWA50AX": "https://forum.darmstadt.freifunk.net/t/installation-nwa50ax-nwa55axe/964",
     "NWA50AX Pro": "https://git.openwrt.org/?p=openwrt/openwrt.git;a=commit;h=f0445746f6fd96fc7c5394b238153bd2ff22bc5b",
     "NWA55AXE": "https://forum.darmstadt.freifunk.net/t/installation-nwa50ax-nwa55axe/964",
-    "WSM20": "https://openwrt.org/toh/zyxel/wsm20#via_web_interface",
+    "WSM20 (Multy M1)": "https://freifunk-aachen.de/2024/01/04/installationsanleitung-zyxel-wsm20/",
   },
 }

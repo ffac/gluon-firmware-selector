@@ -90,6 +90,7 @@ var devices_recommended = {
     "WR1300": {"cudy-wr1300": "v1", "cudy-wr1300-v1": "v1", "cudy-wr1300-v2": "v2", "cudy-wr1300-v3": "v3"},
     "WR2100": "cudy-wr2100",
     "WR3000": "cudy-wr3000",
+    "WR3000e": "cudy-wr3000e",
     "X6": "cudy-x6",
   },
 
@@ -249,6 +250,7 @@ var devices_recommended = {
     "R7800": "netgear-nighthawk-x4s-r7800",
     "WAC104": "netgear-wac104",
     "WAX202": "netgear-wax202",
+    "WAX206": "netgear-wax206",
     "WAX220": "netgear-wax220",
     "WNR2200": {
       "netgear-wnr2200-16m": "16M",
@@ -372,7 +374,7 @@ var devices_recommended = {
     "Archer C20": "tp-link-archer-c20",
     "Archer C20i": "tp-link-archer-c20i",
     "Archer C5": "tp-link-archer-c5",
-    "Archer C50": {"tp-link-archer-c50": "v1", "tp-link-archer-c50-v3": "v3", "tp-link-archer-c50-v4": "v4"},
+    "Archer C50": {"tp-link-archer-c50": "v1", "tp-link-archer-c50-v3": "v3", "tp-link-archer-c50-v4": "v4", "tp-link-archer-c50-v6-ca-eu-ru": "v6"},
     "Archer C59": "tp-link-archer-c59",
     "Archer C6": {"tp-link-archer-c6-v2-eu-ru-jp": "v2", "tp-link-archer-c6-v2": "v2", "tp-link-archer-c6-v3": "v3"},
     "Archer C7": "tp-link-archer-c7",
